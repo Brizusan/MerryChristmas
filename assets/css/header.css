@@ -1,0 +1,118 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: var(--box-shadown);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+.logo {
+  font-size: 2.5rem;
+  color: var(--color-black);
+  font-weight: bolder;
+}
+.logo i {
+  color: var(--color-red);
+}
+.navbar a {
+  margin: 0 1.5rem;
+  font-size: 1.7rem;
+  color: var(--color-black);
+}
+.navbar a:hover {
+  color: var(--color-red);
+}
+.icons div,
+.icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background: var(--light-bg);
+  font-size: 1.7rem;
+  color: var(--color-black);
+  margin-left: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+}
+.icons div:hover,
+.icons a:hover {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+#menu-btn {
+  display: none;
+}
+.search-form {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  background: var(--color-white);
+  border-top: var(--border);
+  border-bottom: var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.search-form.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+input {
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--light-color);
+  text-transform: none;
+}
+label {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: var(--color-black);
+  cursor: pointer;
+}
+label:hover {
+  color: var(--color-red);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    border-top: var(--border);
+    padding: 0 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
