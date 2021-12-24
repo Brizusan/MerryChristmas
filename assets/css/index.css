@@ -1,37 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-@import url('header.css');
-:root{
-    /* font styles */
-    --font-style: 'Poppins', sans-serif;
-    /* Colors */
-    --color-red:#e60000;
-    --color-black:#222;
-    --color-white:#fff;
-    --light-color:#666;
-    --light-bg:#eee;
-    /* outlines */
-    --border:.2rem solid var(--color-black);
-    --box-shadown:0 .5rem 1rem rgba(0,0,0,.1);
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("header.css");
+@import url("home.css");
+:root {
+  /* font styles */
+  --font-style: "Poppins", sans-serif;
+  /* Colors */
+  --color-red: #e60000;
+  --color-black: #222;
+  --color-white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  /* outlines */
+  --border: 0.2rem solid var(--color-black);
+  --box-shadown: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-    transition:  all .2s linear;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    font-family: var(--font-style);
-    overflow-x:hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
+body {
+  font-family: var(--font-style);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+section {
+  padding: 3rem 9%;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: #e60000;
+  color: #fff;
+  font-size: 1.7rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.1rem;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem) scale(0.4);
+    transform: translateY(-4rem) scale(0.4);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem) scale(0.4);
+    transform: translateY(-4rem) scale(0.4);
+  }
+}
+
+/* Media Querys */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 0.2rem solid #222;
+    border-bottom: 0.2rem solid #222;
+    padding: 0 2rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .home .slide .content h3 {
+    font-size: 4rem;
+  }
+  .home .slide .content span {
+    font-size: 2.5rem;
+  }
+  .banner .content {
+    margin: 3rem 0;
+  }
 }
