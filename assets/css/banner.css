@@ -1,5 +1,5 @@
 .banner{
-    background: url('/assets/img/banner-bg.png')no-repeat;
+    background: url('../img/banner-bg.png')no-repeat;
     background-size: cover;
     background-position: center;
 }
