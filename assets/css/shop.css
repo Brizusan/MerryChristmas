@@ -1,0 +1,67 @@
+.shop{
+    background:var(--light-bg);
+}
+.shop .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap:2rem;
+}
+.shop .box-container .box{
+    text-align: center;
+    background: var(--color-white);
+    border:var(--border);
+    box-shadow:var(--box-shadown);
+}
+.shop .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.shop .box-container .box:hover .image .icons{
+    transform: translateX(0rem);
+}
+.shop .image{
+    position: relative;
+    overflow: hidden;
+}
+.shop .image img{
+    height: 25rem;
+}
+.shop .image .icons{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    transform: translateX(-10rem);
+}
+.image .icons a{
+    display: block;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: var(--color-black);
+    border: var(--border);
+    box-shadow: var(--box-shadown);
+    margin-top: 1rem;
+}
+.image .icons a:hover{
+    color: var(--color-white);
+    background: var(--color-red);
+}
+.shop .box-container .content{
+    padding: 2rem;
+}
+.shop .box-container .content h3{
+    font-size: 2rem;
+    color:var(--color-black);
+    padding-bottom: .5rem;
+    font-weight: normal;
+}
+.shop .box-container .content .price{
+    font-size: 2rem;
+    font-weight: bolder;
+    color:var(--color-red) ;
+}
+.shop .box-container .content span{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}

@@ -1,0 +1,28 @@
+.banner{
+    background: url('/assets/img/banner-bg.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner .content{
+    max-width: 40rem;
+    background: var(--color-white);
+    box-shadow: var(--box-shadown);
+    padding: 2rem;
+    text-align: center;
+    margin: 10rem 0;
+}
+.banner .content span{
+    font-size: 2rem;
+    color: var(--color-red);
+}
+.banner .content h3{
+    font-size: 2rem;
+    color: var(--color-black);
+    padding-top: .5rem;
+}
+.banner .content p{
+    font-size: 1.4rem;
+    color: var(--light--color);
+    padding: 1rem 0;
+    line-height: 2;    
+}

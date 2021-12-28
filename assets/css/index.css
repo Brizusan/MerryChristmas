@@ -2,6 +2,9 @@
 @import url("header.css");
 @import url("home.css");
 @import url("category.css");
+@import url("about.css");
+@import url("shop.css");
+@import url("banner.css");
 :root {
   /* font styles */
   --font-style: "Poppins", sans-serif;
@@ -37,6 +40,12 @@ body {
 }
 section {
   padding: 3rem 9%;
+}
+.heading{
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 3rem;
+  font-size: 4rem;
 }
 .btn {
   display: inline-block;
