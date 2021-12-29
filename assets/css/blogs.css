@@ -1,0 +1,77 @@
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap:2rem
+}
+.blogs .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadown);
+}
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.blogs .box-container .box .image{
+    height: 30rem;
+    width: 100%;
+    border-bottom: var(--border);
+    overflow: hidden;
+}
+.blogs .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blogs .box-container .box .content{
+    padding: 2rem;
+    position: relative;
+    text-align: left;
+}
+.blogs .box-container .box .content .date{
+    position: absolute;
+    top: -4rem;
+    right: 3rem;
+    height: 8rem;
+    width: 8rem;
+    border:.5rem solid  #fff;
+    background: var(--color-red);
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 1rem;
+}
+.blogs .box-container .box .content .date h3{
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #fff;
+}
+.blogs .box-container .box .content .date span{
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+.blogs .box-container .box .content .user{
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.blogs .box-container .box .content .user i{
+    padding-right: .5rem;
+    color: var(--color-red);
+}
+.blogs .box-container .box .content .user i:hover{
+    color: var(--color-red);
+}
+.blogs .box-container .box .content .title{
+    font-size: 2rem;
+    color: var(--color-black);
+}
+.blogs .box-container .box .content .title:hover{
+    color: var(--color-red);
+}
+.blogs .box-container .box .content p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.4rem;
+}
+
+

@@ -5,6 +5,9 @@
 @import url("about.css");
 @import url("shop.css");
 @import url("banner.css");
+@import url("gallery.css");
+@import url("message.css");
+@import url("blogs.css");
 :root {
   /* font styles */
   --font-style: "Poppins", sans-serif;
@@ -31,12 +34,12 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
 }
 body {
   font-family: var(--font-style);
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
 }
 section {
   padding: 3rem 9%;
