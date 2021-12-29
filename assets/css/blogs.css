@@ -1,7 +1,7 @@
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
-    gap:2rem
+    gap:2rem;
 }
 .blogs .box-container .box{
     border: var(--border);

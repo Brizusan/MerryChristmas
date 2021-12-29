@@ -8,6 +8,8 @@
 @import url("gallery.css");
 @import url("message.css");
 @import url("blogs.css");
+@import url("services.css");
+@import url("footer.css");
 :root {
   /* font styles */
   --font-style: "Poppins", sans-serif;

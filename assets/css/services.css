@@ -1,0 +1,24 @@
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap:2rem;
+    background: var(--color-red);
+}
+.services .box{
+    text-align: center;
+    padding: 2rem;
+}
+.services .box img{
+    height: 10rem;
+}
+.services .box h3{
+    padding-top: 1rem 0;
+    padding-bottom: .5rem;
+    font-size: 2rem;
+    color: var(--color-white);
+}
+.services .box p{
+    line-height: 2;
+    font-size: 1.7rem;
+    color: var(--color-white);
+}
